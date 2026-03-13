@@ -1,93 +1,184 @@
-# Healthcare Management System
+# 🏥 Health Care Backend System
 
-A full-stack healthcare management system built with Spring Boot and React that connects patients, doctors, and administrators for seamless appointment management and medical consultations.
+A **Spring Boot REST API** for managing a healthcare system including **patients, doctors, appointments, consultations, authentication, and notifications**.
 
-## 🎯 Quick Start
+This project demonstrates **Java backend development skills, REST API design, JWT security, database management, and layered architecture**.
 
-### Backend
-```bash
-cd health-care
-./mvnw spring-boot:run
-# Runs on http://localhost:8086
+---
+
+# 🚀 Tech Stack
+
+* **Java 17**
+* **Spring Boot**
+* **Spring Security**
+* **JWT Authentication**
+* **Spring Data JPA**
+* **MySQL / H2 Database**
+* **Maven**
+* **REST API**
+* **Thymeleaf (Email Templates)**
+
+---
+
+# 📁 Project Structure
+
+```
+src/main/java/com/example/dat
+│
+├── appointment
+│   ├── controller
+│   ├── dto
+│   ├── entity
+│   ├── repo
+│   └── service
+│
+├── consultation
+│
+├── doctor
+│
+├── patient
+│
+├── notification
+│
+├── users
+│
+├── role
+│
+├── security
+│
+├── exceptions
+│
+└── config
 ```
 
-### Frontend
+---
+
+# ⚙️ Features
+
+✔ User Registration & Login
+✔ JWT Authentication & Authorization
+✔ Role Based Access (Admin, Doctor, Patient)
+✔ Doctor Management
+✔ Patient Management
+✔ Appointment Booking System
+✔ Consultation Records
+✔ Notification System
+✔ Password Reset System
+✔ Global Exception Handling
+
+---
+
+# 🔐 Security
+
+* JWT Token Authentication
+* Spring Security Filter Chain
+* Custom Authentication Entry Point
+* Role Based Access Control
+
+---
+
+# 📡 API Modules
+
+### 👤 User Module
+
+* Register User
+* Login User
+* Update Password
+* Reset Password
+
+### 🧑‍⚕️ Doctor Module
+
+* Add Doctor
+* Update Doctor
+* View Doctors
+
+### 🧑 Patient Module
+
+* Add Patient
+* Update Patient
+* View Patient Details
+
+### 📅 Appointment Module
+
+* Book Appointment
+* Cancel Appointment
+* View Appointment History
+
+### 📋 Consultation Module
+
+* Add Consultation
+* View Consultation Details
+
+---
+
+# 🗄 Database Entities
+
+* User
+* Role
+* Doctor
+* Patient
+* Appointment
+* Consultation
+* Notification
+* PasswordResetCode
+
+---
+
+# ▶ How to Run the Project
+
+### 1️⃣ Clone the Repository
+
 ```bash
-cd healthcare-frontend
-npm install  # First time only
-npm start
-# Runs on http://localhost:3000
+git clone https://github.com/Dhirendra140302/health_care_backend.git
 ```
 
-## 📚 Documentation
+### 2️⃣ Navigate to Project
 
-### 🎤 **For Interviews** → Start Here!
-**[DOCUMENTATION_INDEX.md](DOCUMENTATION_INDEX.md)** - Complete guide to all documentation
+```bash
+cd health_care_backend
+```
 
-This project includes **7 comprehensive documentation files** designed for technical interviews:
+### 3️⃣ Run the Application
 
-1. **[PROJECT_DOCUMENTATION.md](PROJECT_DOCUMENTATION.md)** - Complete technical documentation
-2. **[INTERVIEW_QUICK_REFERENCE.md](INTERVIEW_QUICK_REFERENCE.md)** - Quick reference cheat sheet
-3. **[PRESENTATION_GUIDE.md](PRESENTATION_GUIDE.md)** - Presentation script & talking points
-4. **[ARCHITECTURE_DIAGRAMS.md](ARCHITECTURE_DIAGRAMS.md)** - Visual architecture diagrams
-5. **[SYSTEM_FLOWCHARTS.md](SYSTEM_FLOWCHARTS.md)** - Detailed process flowcharts
-6. **[API_DOCUMENTATION.md](API_DOCUMENTATION.md)** - Complete API reference
-7. **[VISUAL_SUMMARY.md](VISUAL_SUMMARY.md)** - One-page visual overview
+```bash
+mvn spring-boot:run
+```
 
-### Quick Links
-- **[README_INTERVIEW.md](README_INTERVIEW.md)** - How to use all documentation
-- **[COMPLETE_SYSTEM_STATUS.md](COMPLETE_SYSTEM_STATUS.md)** - Current system status
-- **[DESIGN_SUMMARY.md](DESIGN_SUMMARY.md)** - UI/UX design details
+Application will start on:
 
-## ✨ Features
+```
+http://localhost:8080
+```
 
-### Patient Features
-- Register and login
-- Browse doctors by specialization
-- Book appointments with date/time picker
-- View appointment history
-- Access video consultation links
-- View medical consultation records
+---
 
-### Doctor Features
-- Register with license and specialization
-- View all assigned appointments
-- Filter by status (Scheduled/Completed/Cancelled)
-- Mark appointments complete
-- Create consultation records
-- Cancel appointments
+# 🧪 Testing APIs
 
-### Admin Features
-- View all system users
-- View all doctors with specializations
-- Monitor all appointments system-wide
-- System oversight and management
+You can test APIs using:
 
-## 🛠 Tech Stack
+* Postman
+* Curl
+* Swagger (if added)
 
-**Backend**: Spring Boot 3.2.5, Spring Security, JWT, MySQL, JPA/Hibernate, JavaMail  
-**Frontend**: React 18, Material-UI, Bootstrap, Axios, React Router  
-**Database**: MySQL 8.0
+---
 
-## 🔐 Security
-- JWT token authentication (24-hour expiration)
-- BCrypt password hashing
-- Role-based access control
-- CORS configuration
-- Input validation
-- SQL injection prevention
+# 📷 Architecture
 
-## 🎯 Test Accounts
+Client (Postman / Frontend)
+⬇
+Controller Layer
+⬇
+Service Layer
+⬇
+Repository Layer
+⬇
+Database
 
-| Role | Email | Password |
-|------|-------|----------|
-| Patient | alice@test.com | password123 |
-| Doctor | doctor@test.com | password123 |
-| Admin | admin@test.com | password123 |
+---
 
-## 📡 API Endpoints
-21+ REST endpoints across authentication, users, doctors, appointments, and consultations.  
-See [API_DOCUMENTATION.md](API_DOCUMENTATION.md) for complete reference.
+# 👨‍💻 Author
 
-## 🚀 Status
-✅ **Production Ready** - All features working, fully documented, ready for deployment
+**Dhirendra Yadav**
+
+GitHub:
+https://github.com/Dhirendra140302
